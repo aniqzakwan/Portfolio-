@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skills</title>
+  <link rel="stylesheet" href="layout.css">
+  <script src="script.js" defer></script>
+  <style>
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .skill-card {
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 220px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header"><h1>My Skills</h1></div>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="academic.html">Education</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="qualities.html">Qualities</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="content-container"><h2>Technical & Soft Skills</h2></div>
+
+  <div id="main" class="skills-container">
+    <div class="skill-card">
+      <div class="skill-icon">💻</div>
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript, PHP</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🌐</div>
+      <h3>Networking</h3>
+      <p>VLAN, DHCP, Routing Protocols, CCNA</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🛠️</div>
+      <h3>Programming</h3>
+      <p>C++, Java, Python (Basic)</p>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📊</div>
+      <h3>Soft Skills</h3>
+      <p>Teamwork, Leadership, Time Management</p>
+    </div>
+  </div>
+
+  <div id="footer">&copy; 2025 Aniq Zakwan</div>
+</div>
+</body>
+</html>

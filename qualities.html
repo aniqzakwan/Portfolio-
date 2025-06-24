@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Qualities</title>
+  <link rel="stylesheet" href="layout.css">
+  <script src="script.js" defer></script>
+  <style>
+    .quality-card {
+      width: 200px;
+      background: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-align: center;
+      padding: 15px;
+      margin: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .quality-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .quality-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .qualities-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header"><h1>My Qualities</h1></div>
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="academic.html">Education</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="qualities.html">Qualities</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div id="content-container"><h2>Strengths and Traits</h2></div>
+  <div id="main" class="qualities-container">
+    <div class="quality-card">
+      <div class="quality-icon">🤝</div>
+      <h3>Teamwork</h3>
+      <p>Excellent collaboration skills in group projects and tasks.</p>
+    </div>
+    <div class="quality-card">
+      <div class="quality-icon">🧠</div>
+      <h3>Problem Solving</h3>
+      <p>Able to troubleshoot and find creative solutions efficiently.</p>
+    </div>
+    <div class="quality-card">
+      <div class="quality-icon">🔄</div>
+      <h3>Adaptability</h3>
+      <p>Flexible and eager to learn new skills or technologies.</p>
+    </div>
+  </div>
+  <div id="footer">&copy; 2025 Aniq Zakwan</div>
+</div>
+</body>
+</html>

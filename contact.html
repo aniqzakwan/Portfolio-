@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="layout.css">
+  <script src="script.js" defer></script>
+  <style>
+    #main {
+      padding: 20px;
+    }
+    .contact-info {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-info h3 {
+      margin-top: 0;
+    }
+    .contact-info p {
+      margin: 8px 0;
+    }
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #2a73d0;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1e5dbf;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+      }
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert("Invalid email address.");
+        return false;
+      }
+      alert("Message sent successfully!");
+      return true;
+    }
+  </script>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header"><h1>Contact Me</h1></div>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="academic.html">Education</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="qualities.html">Qualities</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="content-container"><h2>Let's Connect</h2></div>
+
+  <div id="main">
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>Phone:</strong> +60 14-738 6257</p>
+      <p><strong>Email:</strong> wanislamzz@gmail.com</p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/dkbadai_?igsh=MXg1djJhdDR0cDU1OA==" target="_blank">@dkbadai_</a></p>
+    </div>
+
+    <form onsubmit="return validateForm()">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <div id="footer">&copy; 2025 Aniq Zakwan</div>
+</div>
+</body>
+</html>
